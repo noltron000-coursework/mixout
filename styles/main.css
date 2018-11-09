@@ -1,11 +1,45 @@
 html, body {
-	height: 100%;
-	margin: 0;
 	padding: 0;
+	outline: 0;
+	margin:  0;
+	background-color: #000;
 }
+
 #hero {
 	height: 100%;
 	background-position: top right;
 	background-size: cover;
 	background-image: url("../images/hero.jpg");
+}
+
+#hero * {
+	text-align: center
+}
+
+h1 {
+	font-size: 6em;
+}
+
+h2 {
+	font-size: 4.5em;
+}
+
+h3 {
+	font-size: 3em;
+}
+
+h4 {
+	font-size: 2em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.5em;
+}
+
+p {
+ font-size: 1em;
 }
