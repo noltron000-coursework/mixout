@@ -9,8 +9,8 @@ let hello = ('hi')
 
 app.get('/', (req, res) => {
   res.render('index', { hello: hello });
-})
+});
 
 app.listen(3000, () => {
   console.log('Listening on port 3000!')
-})
+});
