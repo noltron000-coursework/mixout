@@ -7,7 +7,6 @@
 	src: url('../fonts/homestead/homestead-regular.ttf') format('truetype');
 	font-weight: normal;
 }
-
 html, body {
 	font-size: 2pc;
 	background-color: #111;
