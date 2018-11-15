@@ -1,34 +1,113 @@
+/* import both lato and raleway in light, regular, and bold (+ italics) */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Raleway:200,200i,300,300i,400,400i,700,700i&subset=latin-ext');
+
+/* import homestead font for primary mega-headings */
+@font-face {
+	font-family: 'homestead';
+	src: url('../fonts/homestead/homestead-regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
 html, body {
-	height: 100%;
+	font-size: 2pc;
+	background-color: #111;
+
+	height:  0;
+	min-height: 100%;
+
 	padding: 0;
 	outline: 0;
 	margin:  0;
-	background-color: #000;
 }
 
 #hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	height: 100%;
+
+	position: absolute;
 	background-position: top right;
 	background-size: cover;
 	background-image: url("../images/hero.jpg");
 }
 
 #hero * {
-	text-align: center
+	text-align: center;
 }
 
 h1 {
-	font-size: 6em;
+	font-family: 'homestead';
+	font-size: 4em;
+	font-weight: 400;
+	color: seashell;
+
+	margin:
+		0.25em 0
+		0.25em 0;
 }
 
 h2 {
-	font-size: 4.5em;
+	font-family: 'raleway';
+	font-size: 3em;
+	font-weight: 200;
+	color: papayawhip;
+
+	margin:
+		0.25em 0
+		0.25em 0;
 }
 
 h3 {
-	font-size: 3em;
+	font-family: 'raleway';
+	font-size: 2em;
+	font-weight: 300;
+	color: navajowhite;
+
+	margin:
+		0.25em 0
+		0.25em 0;
 }
 
+p {
+	font-family: 'lato';
+	font-size: 1em;
+	font-weight: 400;
+	color: navajowhite;
+
+	width: 30%;
+	margin:
+		0.25em 0
+		0.25em 0;
+}
+
+a {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	color: inherit;
+}
+
+a:visited {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+a:hover {
+	text-decoration-line: underline overline;
+	text-decoration-style: solid;
+	color: seashell;
+}
+
+
+a:active {
+	text-decoration-line: none;
+	text-decoration-style: none;
+	color: seashell;
+}
+
+
+/*
 h4 {
 	font-size: 2em;
 }
@@ -40,7 +119,9 @@ h5 {
 h6 {
 	font-size: 1.5em;
 }
+*/
 
-p {
- font-size: 1em;
+img {
+	-webkit-filter: blur(40px); /* Safari 6.0 - 9.0 */
+	filter: blur(40px);
 }
