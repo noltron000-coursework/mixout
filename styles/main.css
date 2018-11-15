@@ -11,7 +11,7 @@ html, body {
 	font-size: 2pc;
 	background-color: #111;
 
-	height:  0;
+	height: 		   	 	 0;
 	min-height: 100%;
 	width: 100%;
 
@@ -37,7 +37,6 @@ html, body {
 #hero * {
 	text-align: center;
 	mix-blend-mode: difference;
-	background-blend-mode: difference;
 }
 
 /* #hero * {
