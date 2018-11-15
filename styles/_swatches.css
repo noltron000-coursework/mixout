@@ -1,0 +1,27 @@
+div {
+	height: 200px;
+}
+
+.lite1 {
+	background-color: seashell;
+}
+
+.lite2 {
+	background-color: papayawhip;
+}
+
+.lite3 {
+	background-color: navajowhite;
+}
+
+.dark1 {
+	background-color: #000A11;
+}
+
+.dark2 {
+	background-color: #00102A;
+}
+
+.dark3 {
+	background-color: #002152;
+}
