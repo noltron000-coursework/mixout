@@ -11,9 +11,10 @@ html, body {
 	font-size: 2pc;
 	background-color: #111;
 
-	height: 		   	 	 0;
+	height: 0;
+	width: 0;
 	min-height: 100%;
-	width: 100%;
+	min-width: 100%;
 
 	padding: 0;
 	outline: 0;
@@ -23,7 +24,8 @@ html, body {
 #hero {
 	display: flex;
 	flex-direction: column;
-	align-items: left;
+	justify-content: top;
+	align-items: center;
 
 	height: 100%;
 	width: 100%;
@@ -35,8 +37,12 @@ html, body {
 }
 
 #hero * {
+	margin-top: 0.25em;
 	text-align: center;
 	mix-blend-mode: difference;
+	opacity: 1;
+	text-shadow: 0 0 2px;
+	/* exclusion difference hard-light luminosity screen*/
 }
 
 /* #hero * {
@@ -44,11 +50,10 @@ html, body {
 } */
 
 h1 {
-	color: navajowhite;
-
 	font-family: 'homestead';
 	font-size: 4em;
 	font-weight: 400;
+	color: navajowhite;
 
 	margin:
 		0.25em 0
