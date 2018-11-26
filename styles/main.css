@@ -14,8 +14,8 @@ html, body {
 
 	height: 0;
 	width: 100%;
-	max-width: 100%;
 	min-height: 100%;
+	overflow: hidden;
 
 	padding: 0;
 	outline: 0;
@@ -29,7 +29,7 @@ html, body {
 	position: absolute;
 	background-position: top left;
 	background-size: cover;
-	background-image: url("../images/hero/blur-board-game-cards-776654.jpg");
+	background-image: url("../images/hero/adult-adventure-backlit-915972.jpg");
 }
 
 #hero > * {
@@ -107,28 +107,28 @@ a:active {
 	text-decoration-style: none;
 }
 
-h1.lite {
+.lite h1, h1.lite {
 	color: seashell;
 }
-h1.dark {
+.dark h1, h1.dark {
 	color: #000A11;
 }
-h2.lite {
-	color: navajowhite;
+.lite h2, h2.lite {
+	color: papayawhip;
 }
-h2.dark {
+.dark h2, h2.dark {
 	color: #00102A;
 }
-h3.lite {
-	color: papayawhip;
+.lite h3, h3.lite {
+	color: navajowhite;
 }
-h3.dark {
+.dark h3, h3.dark {
 	color: #002152;
 }
-p.lite {
-	color: papayawhip;
+.lite p, p.lite {
+	color: navajowhite;
 }
-p.dark {
+.dark p, p.dark {
 	color: #002152;
 }
 .lite a:hover, .lite a:active {
