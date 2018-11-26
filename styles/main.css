@@ -14,6 +14,7 @@ html, body {
 
 	height: 0;
 	width: 100%;
+	max-width: 100%;
 	min-height: 100%;
 
 	padding: 0;
@@ -28,13 +29,13 @@ html, body {
 	position: absolute;
 	background-position: top left;
 	background-size: cover;
-	background-image: url("../images/hero/action-adventure-beach-390051.jpg");
+	background-image: url("../images/hero/blur-board-game-cards-776654.jpg");
 }
 
 #hero > * {
 	text-align: center;
 	mix-blend-mode: difference;
-	text-shadow: 0 0 2px;
+	text-shadow: 0 0 4px white;
 }
 
 .centered {
@@ -156,13 +157,13 @@ h6 {
 	display: flex;
 	align-items: center;
 	position: initial;
+	overflow: hidden;
 }
 
 .slidingHorizontal > li {
 	animation: leftToRight 24s linear infinite 0s;
 	opacity: 0;
 	text-align: center;
-	overflow: hidden;
 	position: absolute;
 }
 
