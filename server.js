@@ -1,6 +1,7 @@
 // adding requirements
 const express = require('express')
 const exprHBS = require('express-handlebars');
+// const srvStatic = require('serve-static');
 const bodyParse = require('body-parser');
 const exprValid = require('express-validator');
 
@@ -26,8 +27,8 @@ app.use(exprValid());
 // app.use(express.static('public'));
 // app.use(methodOverride('_method'));
 
-
-
+// use static folder - accessible at root from anywhere
+app.use(express.static('static'))
 
 app.get('/', (req, res) => {
 	res.render('home');
