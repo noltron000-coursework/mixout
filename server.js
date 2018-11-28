@@ -5,7 +5,8 @@ const bodyParse = require('body-parser');
 const exprValid = require('express-validator');
 
 // initializing variables
-const app = express()
+const app = express();
+const port = 3000;
 
 // set up handlebars
 app.engine('.hbs', exprHBS({
