@@ -1,6 +1,6 @@
 const express = require('express')
+const exphbs = require('express-handlebars');
 const app = express()
-var exphbs = require('express-handlebars');
 
 app.engine('handlebars', exphbs({defaultLayout: 'index'}));
 app.set('view engine', 'handlebars');
