@@ -56,9 +56,9 @@
 
 @keyframes leftToRight{
 	  0% { opacity: 0; transform: translateX(-2em); }
-	  3% { opacity: 1; transform: translateX(-0.0625em); }
-	 17% { opacity: 1; transform: translateX( 0.0625em); }
+	  3% { opacity: 1; transform: translateX(-0.03125em); }
+	 17% { opacity: 1; transform: translateX( 0.03125em); }
 	 20% { opacity: 0; transform: translateX( 2em); }
 	100% { opacity: 0; }
-/* cycles in 4 seconds */
+/* cycles in 2 seconds */
 }
