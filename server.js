@@ -30,7 +30,7 @@ app.use(exprValid());
 
 
 app.get('/', (req, res) => {
-	res.render('home', { hello: hello });
+	res.render('home');
 });
 
 app.listen(port, () => {
