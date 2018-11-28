@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jasonromulus/SPD-Project-1.2#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "express-validator": "^5.3.0"
   }
 }
