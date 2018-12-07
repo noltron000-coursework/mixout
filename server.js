@@ -37,11 +37,6 @@ app.get('/', (req, res) => {
 	res.render('home');
 });
 
-// survey new page
-app.get('/survey/new', (req, res) => {
-	res.render('survey-new');
-});
-
 // listen on port 3000
 app.listen(port, () => {
 	console.log(`Example app listening on port ${port}!`)

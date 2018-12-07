@@ -1,3 +1,4 @@
+const app = express()
 const events = require('../models/event');
 
 module.exports = (app) => {
@@ -48,3 +49,5 @@ module.exports = (app) => {
 		});
 	});
 }
+
+module.exports = app;
