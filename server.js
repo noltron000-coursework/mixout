@@ -30,7 +30,7 @@ app.use(exprValid());
 // use static folder - accessible at root from anywhere
 app.use(express.static('static'))
 
-const events = require('./controllers/events.js')(app);
+// const events = require('./controllers/events.js')(app);
 
 // landing page
 app.get('/', (req, res) => {
