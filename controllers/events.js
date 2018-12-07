@@ -1,4 +1,4 @@
-const Events = require('../models/event');
+const events = require('../models/event');
 
 module.exports = (app) => {
 	// INDEX events
@@ -7,15 +7,15 @@ module.exports = (app) => {
 	});
 
 	// NEW events
-	app.get('/../new', (req, res) => {
-		res.render('..', {});
+	app.get('/events/new', (req, res) => {
+		res.render('events-new', {});
 	});
 
 	// SHOW events
-	app.get('/../:id', (req, res) => {
+	app.get('/events/:id', (req, res) => {
 		events.findById(req.params.id).then((events) => {
-			Comment.find({ reviewId: req.params.id }).then((events) => {
-				res.render('..')
+			event.find({ reviewId: req.params.id }).then((events) => {
+				res.render('events-show')
 			});
 		}).catch((err) => {
 			console.log(err.message);
@@ -23,23 +23,23 @@ module.exports = (app) => {
 	});
 
 	// EDIT events
-	app.get('/../:id/edit', (req, res) => {
+	app.get('/events/:id/edit', (req, res) => {
 		events.findById(req.params.id, (err, review) => {
-			res.render('..', { review: review });
+			res.render('events-edit', { review: review });
 		});
 	});
 
 	// UPDATE events
-	app.put('/../:id', (req, res) => {
+	app.put('/events/:id', (req, res) => {
 		events.findByIdAndUpdate(req.params.id, req.body).then((events) => {
-			res.redirect(`/../${events._id}`);
+			res.redirect(`/events/${events._id}`);
 		}).catch((err) => {
 			console.log(err.message);
 		});
 	});
 
 	// DELETE events
-	app.delete('/../:id', (req, res) => {
+	app.delete('/events/:id', (req, res) => {
 		console.log("DELETE event");
 		events.findByIdAndRemove(req.params.id).then((event) => {
 			res.redirect('/');
