@@ -3,12 +3,58 @@
 	<h2>Something simple!</h2>
 </header>
 <form>
-	<div class="question">
-		<input type="radio" name="gender" value="male">Male<br>
-		<input type="radio" name="gender" value="female">Female<br>
-		<input type="radio" name="gender" value="other">Other
-	</div>
 	<div>
+		<div class="question">
+			<h3>What's your gender?</h3>
+			<input type="radio" name="gender" id="male" value="male">
+			<label for="male">Male</label><br />
+
+			<input type="radio" name="gender" id="female" value="female">
+			<label for="female">Female</label><br />
+
+			<input type="radio" name="gender" id="other" value="other">
+			<label for="other">Other</label><br />
+		</div>
+
+		<div class="question">
+			<h3>What's fun to you?</h3>
+			<input type="checkbox" name="hobbies" id="eating" value="eating">
+			<label for="male">Eating out</label><br />
+
+			<input type="checkbox" name="hobbies" id="movies" value="movies">
+			<label for="male">Going to movies</label><br />
+
+			<input type="checkbox" name="hobbies" id="nature" value="nature">
+			<label for="male">Enjoying nature</label><br />
+
+			<input type="checkbox" name="hobbies" id="sports" value="sports">
+			<label for="male">Competetive sports</label><br />
+
+			<input type="checkbox" name="hobbies" id="indoors" value="indoors">
+			<label for="male">Reading</label><br />
+
+			<input type="checkbox" name="hobbies" id="indoors" value="indoors">
+			<label for="male">Technology</label><br />
+		</div>
+
+		<div class="question">
+			<h3>What's your location?</h3>
+			<select name="location">
+				<option value="SF">San Francisco</option>
+				<option value="RC">Redwood City</option>
+				<option value="NY">New York City</option>
+				<option value="CH">Chicago</option>
+				<option value="LA">Las Angeles</option>
+				<option value="CL">Cleveland</option>
+				<option value="MI">Miami</option>
+				<option value="DC">Washington DC</option>
+			</select>
+		</div>
+
 		<button>Submit</button>
 	</div>
+</form>
+
+<form action="/action_page.php">
+
 </form>
