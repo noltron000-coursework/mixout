@@ -1,4 +1,4 @@
-const events = require('../models/event');
+const Event = require('../models/event');
 
 module.exports = (app) => {
 	// INDEX events
@@ -9,6 +9,19 @@ module.exports = (app) => {
 	// NEW events
 	app.get('/event/new', (req, res) => {
 		res.render('events-new', {});
+	});
+
+	// CREATE events
+	app.post('/event/new', (req, res) => {
+		const event = new Event(req.body);
+		event
+			.save()
+			.then(() => {
+				res.redirect('/event');
+			})
+			.catch((err) => {
+				console.error(err);
+			});
 	});
 
 	// SHOW events
