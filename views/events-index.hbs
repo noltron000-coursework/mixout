@@ -1,11 +1,13 @@
-<header>
-	<h1>Events</h1>
-	<h2>Something simple!</h2>
-</header>
+{{>navbar}}
 <p>
 	<ul>
-		<li>Event 1</li>
-		<li>Event 2</li>
-		<li>Event 3</li>
+		{{!-- delete <li> below once events items have been created. --}}
+		<li>
+			<h3><a href="/event/">Event Name</a></h3>
+			<p>Event Description</p>
+		</li>
+		{{#each events}}
+		{{>event-card}}
+		{{/each}}
 	</ul>
 </p>

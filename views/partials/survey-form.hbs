@@ -1,0 +1,61 @@
+<form action='/survey/new' method='post'>
+
+	<div>
+		<fieldset>
+			<legend>
+				Questions
+			</legend>
+			<div class="question">
+				<h3>What's your gender?</h3>
+				<input type="radio" name="gender" id="male" value="male">
+				<label for="male">Male</label><br />
+
+				<input type="radio" name="gender" id="female" value="female">
+				<label for="female">Female</label><br />
+
+				<input type="radio" name="gender" id="other" value="other">
+				<label for="other">Other</label><br />
+			</div>
+
+			<div class="question">
+				<h3>What's fun to you?</h3>
+				<input type="checkbox" name="hobbies" id="eating" value="eating">
+				<label for="eating">Eating out</label><br />
+
+				<input type="checkbox" name="hobbies" id="movies" value="movies">
+				<label for="movies">Going to movies</label><br />
+
+				<input type="checkbox" name="hobbies" id="nature" value="nature">
+				<label for="nature">Enjoying nature</label><br />
+
+				<input type="checkbox" name="hobbies" id="sports" value="sports">
+				<label for="sports">Competetive sports</label><br />
+
+				<input type="checkbox" name="hobbies" id="reading" value="reading">
+				<label for="reading">Reading</label><br />
+
+				<input type="checkbox" name="hobbies" id="technology" value="technology">
+				<label for="technology">Technology</label><br />
+			</div>
+
+			<div class="question">
+				<h3>What's your location?</h3>
+				<select name="location">
+					<option>San Francisco</option>
+					<option>Redwood City</option>
+					<option>New York City</option>
+					<option>Chicago</option>
+					<option>Las Angeles</option>
+					<option>Cleveland</option>
+					<option>Miami</option>
+					<option>Washington DC</option>
+				</select>
+			</div>
+		</fieldset>
+		{{!-- save temporary information in local storage or cookie --}}
+		{{!-- if user creates account, move information to database --}}
+
+		<button>Submit</button>
+	</div>
+
+</form>

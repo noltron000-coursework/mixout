@@ -1,7 +1,11 @@
-const express = require('express')
-const app = express()
+module.exports = (app) => {
+	// Show New Survey Form
+	app.get('/survey/new', (req, res) => {
+		res.render('survey-new.hbs');
+	});
 
-// Create Survey
-app.get('/survey/new', (req, res) => {
-	res.render('survey-new');
-});
+	// Create New Survey Post
+	app.post('/survey/new', (req, res) => {
+		res.redirect('/event');
+	});
+}
