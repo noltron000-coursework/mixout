@@ -4,6 +4,7 @@ const exprHBS = require('express-handlebars');
 const bodyParse = require('body-parser');
 const exprValid = require('express-validator');
 // setting up mongo server
+const srvMongo = require('./server-mongoose');
 
 // initializing variables
 const app = express();

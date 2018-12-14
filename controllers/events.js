@@ -3,7 +3,14 @@ const Event = require('../models/event');
 module.exports = (app) => {
 	// INDEX events
 	app.get('/event', (req, res) => {
-		res.render('events-index');
+		Event
+			.find({})
+			.then((events) => {
+				res.render('events-index', { events });
+			})
+			.catch((err) => {
+				console.error(err);
+			});
 	});
 
 	// NEW events
@@ -26,13 +33,9 @@ module.exports = (app) => {
 
 	// SHOW events
 	app.get('/event/:id', (req, res) => {
-		events.findById(req.params.id)
-			.then((events) => {
-				events
-					.find({ reviewId: req.params.id })
-					.then((event) => {
-						res.render('events-show')
-					});
+		Event.findById(req.params.id)
+			.then((event) => {
+				res.render('events-show', { event })
 			}).catch((err) => {
 				console.log(err.message);
 			});

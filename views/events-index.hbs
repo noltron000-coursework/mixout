@@ -1,11 +1,7 @@
 {{>navbar}}
+<h2>Matched Events</h2>
 <p>
 	<ul>
-		{{!-- delete <li> below once events items have been created. --}}
-		<li>
-			<h3><a href="/event/">Event Name</a></h3>
-			<p>Event Description</p>
-		</li>
 		{{#each events}}
 		{{>event-card}}
 		{{/each}}

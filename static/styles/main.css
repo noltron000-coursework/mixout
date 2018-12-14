@@ -91,11 +91,17 @@ a:active {
 	text-decoration-style: none;
 }
 
+.lite *, *.lite {
+	color: navajowhite;
+}
+.dark *, *.dark {
+	color: #000A11;
+}
 .lite h1, h1.lite {
 	color: seashell;
 }
 .dark h1, h1.dark {
-	color: #000A11;
+	color: #002152;
 }
 .lite h2, h2.lite {
 	color: papayawhip;
@@ -107,19 +113,19 @@ a:active {
 	color: navajowhite;
 }
 .dark h3, h3.dark {
-	color: #002152;
+	color: #000A11;
 }
-.lite p, p.lite {
+.lite p, p.lite, {
 	color: navajowhite;
 }
 .dark p, p.dark {
-	color: #002152;
+	color: #000A11;
 }
 .lite a:hover, .lite a:active {
 	color: seashell;
 }
 .dark a:hover, .dark a:active {
-	color: seashell;
+	color: #002152;
 }
 
 /*
