@@ -12,5 +12,5 @@ MixOut is a social media & events website designed to get people out of their co
 1. User is introduced conceptually to our vision with the homepage
 1. User fills out a brief survey
 1. User is shown matching events near them
-  - these events have users with similar survey results
+	- these events have users with similar survey results
 1. User goes out to the event and meets new people
