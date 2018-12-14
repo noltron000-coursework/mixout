@@ -31,6 +31,7 @@ app.use(exprValid());
 app.use(express.static('static'))
 
 // const events = require('./controllers/events.js')(app);
+// const survey = require('./controllers/survey.js')(app);
 
 // landing page
 app.get('/', (req, res) => {
