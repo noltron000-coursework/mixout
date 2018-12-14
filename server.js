@@ -1,9 +1,10 @@
 // adding requirements
 const express = require('express')
 const exprHBS = require('express-handlebars');
-// const srvStatic = require('serve-static');
 const bodyParse = require('body-parser');
 const exprValid = require('express-validator');
+// setting up mongo server
+const srvMongo = require('./server-mongoose');
 
 // initializing variables
 const app = express();
@@ -30,8 +31,9 @@ app.use(exprValid());
 // use static folder - accessible at root from anywhere
 app.use(express.static('static'))
 
-// const events = require('./controllers/events.js')(app);
-// const survey = require('./controllers/survey.js')(app);
+// require routes
+const events = require('./controllers/events.js')(app);
+const surveys = require('./controllers/surveys.js')(app);
 
 // landing page
 app.get('/', (req, res) => {
