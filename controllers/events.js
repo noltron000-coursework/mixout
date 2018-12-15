@@ -59,7 +59,7 @@ module.exports = (app) => {
 
 	// DELETE events
 	app.delete('/event/:id', (req, res) => {
-		console.log("DELETE event");
+		console.log("DELET event");
 		events.findByIdAndRemove(req.params.id).then((event) => {
 			res.redirect('/');
 		}).catch((err) => {
